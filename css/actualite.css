@@ -1,0 +1,266 @@
+/* polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*paragraphe*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); /*titre*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Évite tout débordement horizontal */
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  body{
+    background: #FDFFFC;
+  }
+
+  /* loader */
+  .loader {
+    width: 100%;
+    height: 100%;
+    z-index: 10000;    
+  }
+  
+  .loader {
+    width: 100%;
+    height: 100%;
+    background: rgb(216,147,147);
+    background: linear-gradient(63deg, rgba(216,147,147,1) 0%, rgba(253,255,252,1) 99%);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+    transition: opacity 600ms ease;
+  }
+  
+  .hidden {
+    z-index: -1000;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #589226;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle .symbol {
+    font-size: 1.5rem;
+    color: #589226;
+    animation: fade 2s infinite;
+  }
+  
+  .slogan {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #223843;
+    font-weight: bold;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes fade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  /* header-barre de navigation */
+  nav{
+    background: #223843;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .logo{
+    width: 165px;
+  }
+  
+  nav ul li{
+  display: inline-block;
+  padding: 10px 20px ;
+  list-style: none;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #D89393;
+  }
+  
+  nav ul li a:hover{
+    color: #FDFFFC;
+    transition: .3s;
+  }
+
+  /* sous menu */
+.submenu{
+    display: none; /* Masquer le sous-menu par défaut */
+    position: absolute;
+    top: 100%; /* Positionner en dessous du parent */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Ajuster le centrage */
+    padding: 10px 0; /* Espacement vertical */
+    width: max-content; /* Ajuster la largeur au contenu */
+    background-color: #589226;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  .submenu li {
+    display: block;
+  }
+  
+  .submenu li a {
+    color: #FDFFFC;
+  }
+  
+  .submenu li a:hover {
+    color: #D89393;
+  }
+  
+  .dropdown {
+    position: relative; /* Nécessaire pour le positionnement absolu de .submenu */
+  }
+  
+  /* Affichage du sous-menu au survol */
+  .dropdown:hover .submenu {
+    display: block;
+  }
+
+  /* dernière activité */
+  .card-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    height: 80vh;             
+  }
+  
+  .card{
+      width: 520px;
+      height: 500px;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #2238436e;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #FDFFFC;
+    padding: 30px;
+    overflow: scroll;
+    cursor: pointer;
+    transition: 2s;
+  }
+  
+  .card:hover .card-body{
+    right: 0;
+  }
+  
+  .card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #223843;
+    font-weight: 500;
+  }
+  
+  .card-sub-title{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .card-info{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 40px 0;
+  }
+  
+  .card-btn{
+    background-color: #223843;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px ;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-btn:hover{
+    background-color: #445c69;
+    transform: scale(1.05);
+  }
+
+  /* webinaire */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-width: 800px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
