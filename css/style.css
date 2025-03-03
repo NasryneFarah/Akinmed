@@ -654,6 +654,56 @@ html, body {
     
       .card h3 {
         font-size: 1.1rem; /* Ajuste la taille du texte */
+      } 
+      
+      /* section actualité */
+      .actualites {
+        padding: 30px 10px;
+      }
+    
+      .actualites h1 {
+        font-size: 2rem;
+      }
+    
+      .actualites-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+    
+      .webinaire-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        gap: 15px;
+        max-width: 90%;
+      }
+    
+      .webinaire-image {
+        width: 120px;
+        height: 120px;
+      }
+    
+      /* Désactiver le zoom de l'image au survol sur mobile */
+      .webinaire-image:hover {
+        transform: none;
+      }
+    
+      .webinaire-info {
+        text-align: center;
+      }
+    
+      .webinaire-info h3 {
+        font-size: 1.3rem;
+      }
+    
+      .webinaire-info p {
+        font-size: 0.9rem;
+      }
+    
+      .webinaire-info button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
       }
     }
     
