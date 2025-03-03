@@ -680,8 +680,8 @@ html, body {
       }
     
       .webinaire-image {
-        width: 120px;
-        height: 120px;
+        width: 165px;
+        height: 165px;
       }
     
       /* Désactiver le zoom de l'image au survol sur mobile */
@@ -694,7 +694,7 @@ html, body {
       }
     
       .webinaire-info h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
       }
     
       .webinaire-info p {
