@@ -163,7 +163,7 @@ html, body {
     color: #D89393;
   }
 
-  /* menu responsive */
+  /* menu responsive version mobile */
   @media screen and (max-width: 768px) {
     .hamburger {
       display: block;
