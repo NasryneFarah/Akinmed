@@ -635,14 +635,26 @@ html, body {
       }
 
       /* section mission */
-      .card .image-cards {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        margin: 0 auto 15px auto; /* Centre horizontalement et espace en bas */
-        display: block;
+      .cards {
+        flex-direction: column; /* Met les cartes en colonne */
+        align-items: center; /* Centre les cartes */
+        gap: 15px; /* Réduit l'espace entre les cartes */
       }
-
+    
+      .card {
+        width: 90%; /* Augmente la largeur des cartes */
+        max-width: 300px; /* Évite qu'elles deviennent trop grandes */
+        padding: 15px; /* Ajuste l'espace intérieur */
+      }
+    
+      .card .image-cards {
+        width: 120px; /* Augmente légèrement la taille des images */
+        height: 120px;
+      }
+    
+      .card h3 {
+        font-size: 1.1rem; /* Ajuste la taille du texte */
+      }
     }
     
     /* Version tablette */
