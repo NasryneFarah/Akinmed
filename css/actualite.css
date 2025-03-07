@@ -162,95 +162,6 @@ html, body {
     color: #D89393;
   }
 
-  /* menu responsive */
-  @media screen and (max-width: 768px) {
-    .hamburger {
-      display: block;
-    }
-  
-    /* Menu caché par défaut sur mobile */
-    nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      padding: 20px 0;
-      position: absolute;
-      top: 9%;
-      left: 0;
-      background: #223843;
-      z-index: 5;
-    }
-  
-    nav ul li {
-      display: block;
-      text-align: center;
-      padding: 15px;
-    }
-  
-    nav ul li a {
-      font-size: 20px;
-    }
-  
-    /* Afficher le menu quand activé */
-    nav ul.active {
-      display: block;
-    }
-  
-    .dropdown .submenu {
-      position: static;
-      transform: none;
-      width: 100%;
-      display: none;
-    }
-  
-    .dropdown:hover .submenu {
-      display: block;
-    }
-  }
-  
-  /* Version tablette */
-@media screen and (max-width: 1103px) {
-  /* Lorsque la taille de l'écran est plus grande que mobile mais plus petite que desktop */
-  .hamburger {
-    display: block;
-  }
-
-  nav ul {
-    display: none; /* Menu caché par défaut */
-    flex-direction: column;
-    width: 100%;
-    padding: 20px 0;
-    position: absolute;
-    top: 30%;
-    left: 0;
-    background: #223843;
-    z-index: 5;
-  }
-
-  nav ul li {
-    display: block;
-    text-align: center;
-    padding: 15px;
-  }
-
-  nav ul li a {
-    font-size: 18px; /* Taille plus petite que sur mobile */
-  }
-
-  /* Affichage du menu quand activé */
-  nav ul.active {
-    display: block;
-  }
-
-  /* Sous-menu version tablette */
-  .dropdown .submenu {
-    position: static;
-    transform: none;
-    width: 100%;
-    display: none;
-  }
-}
-
   /* dernière activité */
   .card-container {
     display: flex;
@@ -364,4 +275,197 @@ html, body {
   right: 15px;
   font-size: 25px;
   cursor: pointer;
+}
+
+  /* menu responsive version mobile */
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    /* Menu caché par défaut sur mobile */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px 0;
+      position: absolute;
+      top: 9%;
+      left: 0;
+      background: #223843;
+      z-index: 5;
+    }
+  
+    nav ul li {
+      display: block;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    /* Afficher le menu quand activé */
+    nav ul.active {
+      display: block;
+    }
+  
+    .dropdown .submenu {
+      position: static;
+      transform: none;
+      width: 100%;
+      display: none;
+    }
+  
+    .dropdown:hover .submenu {
+      display: block;
+    }
+
+    /* dernière activité */
+     /* Centrer la carte et ajuster la taille */
+  .card-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 30px;
+  }
+
+  .card-sub-title {
+    font-size: 14px;
+  }
+
+  .card-info {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 0;
+  }
+
+  .card-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Modal responsive */
+  .modal-content {
+    width: 90%;
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .close {
+    font-size: 20px;
+    top: 5px;
+    right: 10px;
+  }
+  }
+  
+  /* Version tablette */
+@media screen and (max-width: 1103px) {
+  /* Lorsque la taille de l'écran est plus grande que mobile mais plus petite que desktop */
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none; /* Menu caché par défaut */
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background: #223843;
+    z-index: 5;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    padding: 15px;
+  }
+
+  nav ul li a {
+    font-size: 18px; /* Taille plus petite que sur mobile */
+  }
+
+  /* Affichage du menu quand activé */
+  nav ul.active {
+    display: block;
+  }
+
+  /* Sous-menu version tablette */
+  .dropdown .submenu {
+    position: static;
+    transform: none;
+    width: 100%;
+    display: none;
+  }
+
+  /* dernière activité */
+  .card-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 75%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  .card-body {
+    padding: 25px;
+  }
+
+  .card-title {
+    font-size: 40px;
+  }
+
+  .card-sub-title {
+    font-size: 15px;
+  }
+
+  .card-info {
+    font-size: 17px;
+    line-height: 26px;
+    margin: 30px 0;
+  }
+
+  .card-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  /* Ajustement de la modale */
+  .modal-content {
+    width: 80%;
+    max-width: 700px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 350px;
+  }
 }
