@@ -651,11 +651,11 @@ html, body {
         margin-bottom: 5px;
       }
 
-      /* Changer le texte en version courte sur mobile */
+      /* Changer le texte en version courte sur mobile
   .mission-description::after {
     content: "Promotion de solutions médicales en santé intime et reproductive.";
     display: block;
-  }
+  } */
 
   /* Cacher le texte original sur mobile */
   .mission-description .original-text {

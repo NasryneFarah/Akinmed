@@ -400,6 +400,11 @@ html, body {
   }
 
   /* prochaine activité */
+
+.small-card .card-title {
+  font-size: 25px; /* Taille légèrement réduite */
+}
+
   .small-card .card-body {
     overflow: scroll; 
   }
