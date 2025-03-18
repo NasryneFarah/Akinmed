@@ -18,7 +18,7 @@ $(document).ready(function () {
   }
 
   // Gestion de l'ouverture du modal
-  $(".card-btn").on("click", function () {
+  $(".recap-btn").on("click", function () {
     openModal();
   });
 

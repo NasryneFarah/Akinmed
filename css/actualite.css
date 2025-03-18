@@ -166,8 +166,9 @@ html, body {
   .card-container {
     display: flex;
     justify-content: center;  
-    align-items: center;       
-    height: 80vh;             
+    align-items: center;    
+    padding-top: 40px;   
+    /* height: 80vh */
   }
   
   .card{
@@ -276,6 +277,26 @@ html, body {
   font-size: 25px;
   cursor: pointer;
 }
+
+/* prochaine activité */
+.small-card .card-body {
+  overflow: visible; /* Supprime le scroll si le texte est court */
+  padding: 20px; /* Ajuste l'espace */
+}
+
+.small-card .card-title {
+  font-size: 40px; /* Taille légèrement réduite */
+}
+
+.small-card .card-info {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.small-card .card-btn {
+  margin-top: 25px; /* Espace entre le texte et le bouton */
+}
+
 
   /* menu responsive version mobile */
   @media screen and (max-width: 768px) {
