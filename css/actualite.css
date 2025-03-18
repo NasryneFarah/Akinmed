@@ -398,6 +398,11 @@ html, body {
     top: -4px;
     right: 4px;
   }
+
+  /* prochaine activité */
+  .small-card .card-body {
+    overflow: scroll; 
+  }
   }
   
   /* Version tablette */
