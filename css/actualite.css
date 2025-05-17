@@ -165,19 +165,31 @@ html, body {
   /* dernière activité */
   .card-container {
     display: flex;
-    justify-content: center;  
-    align-items: center;    
-    padding-top: 40px;   
-    /* height: 80vh */
-  }
-  
-  .card{
-      width: 520px;
-      height: 500px;
-      border-radius: 20px;
-      position: relative;
-      overflow: hidden;
-  }
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: calc(50% - 2rem); /* 2 cartes par ligne avec l'espace (gap) */
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .card {
+    width: 500px; 
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 300px; 
+    max-width: 500px; 
+} */
   
   .card-img{
     width: 100%;
@@ -240,6 +252,12 @@ html, body {
   .card-btn:hover{
     background-color: #445c69;
     transform: scale(1.05);
+  }
+
+  .appel_temoignage img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
   }
 
   /* webinaire */
@@ -346,6 +364,7 @@ html, body {
     /* dernière activité */
      /* Centrer la carte et ajuster la taille */
   .card-container {
+    width: 100%;
     height: auto;
     flex-direction: column;
     align-items: center;
