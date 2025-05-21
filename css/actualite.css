@@ -180,16 +180,6 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-
-/* .card {
-    width: 500px; 
-    height: 500px;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    flex: 1 1 300px; 
-    max-width: 500px; 
-} */
   
   .card-img{
     width: 100%;
